@@ -1,0 +1,303 @@
+# ===========================================
+# CARRERSPARK GLOBAL - .gitignore
+# ===========================================
+# Projeto: Plataforma Full-Stack TypeScript
+# Stack: React + Node.js + TypeScript + PostgreSQL
+# ===========================================
+
+# ===========================================
+# DEPENDENCIES & PACKAGE MANAGERS
+# ===========================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===========================================
+# BUILD & DISTRIBUTION
+# ===========================================
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+.tscache/
+
+# ===========================================
+# ENVIRONMENT & CONFIGURATION
+# ===========================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Configuration files with secrets
+config/secrets.json
+config/production.json
+
+# ===========================================
+# DATABASE & DATA
+# ===========================================
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+*.dump
+
+# Prisma
+prisma/migrations/dev.db*
+
+# ===========================================
+# LOGS & TEMPORARY FILES
+# ===========================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# ===========================================
+# TESTING
+# ===========================================
+
+# Test outputs
+test-results/
+playwright-report/
+playwright/.cache/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Jest
+jest-results.xml
+coverage/
+
+# ===========================================
+# IDE & EDITORS
+# ===========================================
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# OPERATING SYSTEM
+# ===========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# DOCKER & CONTAINERS
+# ===========================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# ===========================================
+# CLOUD & DEPLOYMENT
+# ===========================================
+
+# Vercel
+.vercel/
+
+# AWS
+.aws/
+
+# Google Cloud
+.gcloud/
+
+# ===========================================
+# MONITORING & OBSERVABILITY
+# ===========================================
+
+# Sentry
+.sentryclirc
+
+# ===========================================
+# SECURITY & SECRETS
+# ===========================================
+
+# API Keys and secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ===========================================
+# DOCUMENTATION & STORYBOOK
+# ===========================================
+
+# Storybook
+storybook-static/
+.chromatic/
+
+# ===========================================
+# CACHE & TEMPORARY
+# ===========================================
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Temporary folders
+tmp/
+temp/
+
+# ===========================================
+# SPECIFIC TO CARRERSPARK
+# ===========================================
+
+# Project-specific
+uploads/
+public/uploads/
+static/uploads/
+
+# Backup files
+*.backup
+*.bak
+
+# ===========================================
+# KEEP IMPORTANT FILES
+# ===========================================
+
+# Keep important config files
+!.env.example
+!.env.template
+!docker-compose.yml
+!docker-compose.override.yml.example
+
+# Keep documentation
+!README.md
+!LICENSE
+!CHANGELOG.md
+!CONTRIBUTING.md
+
+# Keep CI/CD configs
+!.github/
+!.gitlab-ci.yml
+!azure-pipelines.yml
+
+# ===========================================
+# Rules for .cursor
+# ===========================================
+
+.cursor/rules/
+.cursor/rules/contexto.mdc
+.cursor/rules/projeto.mdc
+
+# ===========================================
+# checks for .cursor
+# ===========================================
+
+.checkList/
+
+# ===========================================
+# END OF .gitignore
+# ===========================================
